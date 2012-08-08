@@ -4,6 +4,8 @@ gem 'rails', '3.2.7rc1'
 gem 'bootstrap-sass', '2.0.0'
 
 gem "therubyracer"
+gem 'annotate', '2.5.0', group: :development
+gem 'bcrypt-ruby', '3.0.1'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
