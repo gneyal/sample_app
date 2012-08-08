@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.7rc1'
+gem 'bootstrap-sass', '2.0.0'
+
 gem "therubyracer"
 
 group :development, :test do
