@@ -1,10 +1,12 @@
 SampleApp::Application.routes.draw do
-  
+  resources :sessions, only: [:new, :create, :destroy]
   resources :users
   
   root to: 'static_pages#home'
 
   match '/signup',  to: 'users#new'
+  match '/signin',  to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete # must be invoked by an HTTP DELETE request
 
   match '/help',    to: 'static_pages#help'
   match '/about',   to: 'static_pages#about'
